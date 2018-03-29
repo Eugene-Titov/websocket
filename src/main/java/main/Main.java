@@ -13,6 +13,8 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
 
+        ClassLoader.getSystemResource("html/hello.html");
+
         Server server = new Server(9000);
 
         ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS);
